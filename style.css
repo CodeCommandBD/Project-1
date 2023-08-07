@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-con {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.box {
+    background: url(img/04.jpg) no-repeat center center / cover;
+    position: relative;
+    height: 700px;
+   
+    box-shadow: -18px -14px 20px rgba(0,0,0,0.25);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 1s;
+}
+.box:hover {
+    transform: rotateX(0deg) rotatez(-3deg)  rotateY(10deg) translateY(0px) translatex(0px) translatez(80px);
+}
+
+.box img {
+    position: absolute;
+    transition: 1s;
+    
+}
+.box img:nth-child(1) {
+    width: 400px;
+    top: 50px;
+    right: 5px;
+   
+}
+.box:hover img:nth-child(1) {
+    transform: rotatex(8deg) rotateY(-12deg) translatez(70px);
+}
+
+
+.box img:nth-child(2) {
+    width: 470px;
+    right: 260px;
+    top: 210px;
+}   
+.box:hover img:nth-child(2) {
+    transform: translatez(100px);
+
+}
+
+.box img:nth-child(3) {
+    width: 90px;
+    right: 999px;
+    top: 352px;
+    
+}
+.box:hover img:nth-child(3) {
+    transform: rotatez(6deg) translatez(0px);
+}
+
+.box img:nth-child(4) {
+    width: 170px;
+    right: 515px;
+    top: 340px;
+}   
+.box:hover img:nth-child(4) {
+    transform: rotatez(0deg) translatex(9px) translateY(0px) translatez(100px);
+}
+
+.box img:nth-child(5) {
+    width: 100px;
+    top: 344px;
+    left: 68px;
+    
+}
+.box:hover img:nth-child(5) {
+    transform:rotatex(5deg) rotateY(5deg) translateZ(11px) translateX(28px) translateY(1px);
+}
+
+.box img:nth-child(6) {
+    width: 400px;
+    bottom: 0px;
+    left: 501px;
+   
+}
+.box:hover img:nth-child(6) {
+    transform:  rotatex(0deg) rotateY(-15deg) rotatez(10deg) translateZ(84px) translateY(12px) translateX(-22px);
+}
+.box img:nth-child(7) {
+    width: 500px;
+    top: -90px;
+    left: 20px;
+    
+}
+.box:hover img:nth-child(7) {
+    transform: rotate(9deg) translatez(37px) translatex(-3px) translateY(50px);
+}
+.box img:nth-child(8) {
+    width: 221px;
+    top: 270px;
+   
+}
+.box:hover img:nth-child(8) {
+    transform: rotatex(-2deg) rotateY(0deg) translatez(3px) translatex(25px) translateY(1px);
+}
